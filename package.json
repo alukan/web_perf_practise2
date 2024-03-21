@@ -11,6 +11,8 @@
     "serve": "vite preview --port 3000",
     "audit_mobile": "lighthouse http://localhost:3000 --only-categories=best-practices --only-categories=performance --view",
     "audit": "lighthouse http://localhost:3000 --only-categories=best-practices --only-categories=performance --preset=desktop --view ",
+    "build_and_audit_mobile": "concurrently \"npm run build\" \"npm run serve\" \"npm run audit_mobile\"",
+    "build_and_audit": "concurrently \"npm run build\" \"npm run serve\" \"npm run audit\"",
     "stop": "kill $!"
   }
 }

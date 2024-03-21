@@ -1,0 +1,28 @@
+name: Lighthouse Audit
+
+on:
+  push: # Trigger on push to any branch
+  # You can customize the trigger (e.g., pull_request)
+
+jobs:
+  build_and_audit:
+    runs-on: ubuntu-latest  # You can choose a different runner OS
+
+    steps:
+      - uses: actions/checkout@v2  # Checkout code from your repository
+      - name: Use Node.js 14.x  # Adjust Node.js version if needed
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: Install dependencies
+        run: npm install
+      - name: Build your project
+        run: npm run build  # Build your project
+      - name: Run Lighthouse audit (desktop)
+        uses: treosh/lighthouse-ci-action@v7  # Lighthouse CI action
+        with:
+          urls: "https://main--melodic-moxie-4eb15d.netlify.app"  # Assuming built files reside in a 'dist' folder
+          # Additional options (refer to action documentation for details)
+          # budgetPath: ./budget.json  # Path to your Lighthouse budget config
+          # uploadArtifacts: true     # Uploads results as artifacts
+          # temporaryPublicStorage: true # Makes artifacts temporarily public
