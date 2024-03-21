@@ -22,7 +22,7 @@ jobs:
         uses: treosh/lighthouse-ci-action@v7  # Lighthouse CI action
         with:
           urls: "https://main--melodic-moxie-4eb15d.netlify.app",
-          additionalFlags: "--only-categories=best-practices --only-categories=performance --preset=desktop --view"
+          additionalFlags: "--only-categories=best-practices --only-categories=performance --preset=desktop --view",
           uploadArtifacts: true  # Assuming built files reside in a 'dist' folder
           # Additional options (refer to action documentation for details)
           # budgetPath: ./budget.json  # Path to your Lighthouse budget config
