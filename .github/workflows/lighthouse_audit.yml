@@ -21,7 +21,8 @@ jobs:
       - name: Run Lighthouse audit (desktop)
         uses: treosh/lighthouse-ci-action@v7  # Lighthouse CI action
         with:
-          urls: "https://main--melodic-moxie-4eb15d.netlify.app"  # Assuming built files reside in a 'dist' folder
+          urls: "https://main--melodic-moxie-4eb15d.netlify.app"
+          uploadArtifacts: true  # Assuming built files reside in a 'dist' folder
           # Additional options (refer to action documentation for details)
           # budgetPath: ./budget.json  # Path to your Lighthouse budget config
           # uploadArtifacts: true     # Uploads results as artifacts

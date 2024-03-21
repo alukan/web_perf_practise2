@@ -10,3 +10,5 @@
 - Added gzip and Brotli compression
 
 - Added preload for css
+
+- Added actions
