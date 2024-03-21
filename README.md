@@ -1,0 +1,5 @@
+- Deleted unnecessary "<" in about.html
+- Added lighthouse `npm run audit`
+- To start vite `npm run serve`
+- To build `npm run build`
+- Added bundle-analysis
