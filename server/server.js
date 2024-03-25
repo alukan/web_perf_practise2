@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 const distPath = path.join(__dirname, '../dist');
 
 app.use(compression());
-
+app.set('etag', true)
 app.use((req, res, next) => {
     if (req.path.endsWith('.html')) {
         console.log("html")
