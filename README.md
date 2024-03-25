@@ -1,14 +1,8 @@
-- Deleted unnecessary "<" in about.html
-- Added lighthouse `npm run audit` for destop and `npm run audit_mobile`
-- To use lighnouse in build `"build_and_audit_mobile"` or `"build_and_audit"`
-- To start vite `npm run serve`
-- To build `npm run build`
-- Added bundle-analysis
+HTML is served from /dist
+```start_back_dev``` to start using nodemon
 
-- Added lazy-loading for video
-- Compressed video
-- Added gzip and Brotli compression
+# Work with pm2
+``` start_back_pm2 ```
+``` stop_back_pm2 ```
+``` kill_back_pm2 ``` 
 
-- Added preload for css
-
-- Added actions
