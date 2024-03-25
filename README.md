@@ -12,3 +12,5 @@
 - Added preload for css
 
 - Added actions
+
+- link to netify https://melodic-moxie-4eb15d.netlify.app
