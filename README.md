@@ -1,16 +1,24 @@
-- Deleted unnecessary "<" in about.html
-- Added lighthouse `npm run audit` for destop and `npm run audit_mobile`
-- To use lighnouse in build `"build_and_audit_mobile"` or `"build_and_audit"`
-- To start vite `npm run serve`
-- To build `npm run build`
-- Added bundle-analysis
+## Getting Started
 
-- Added lazy-loading for video
-- Compressed video
-- Added gzip and Brotli compression
+First, run the development server:
 
-- Added preload for css
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-- Added actions
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- link to netify https://melodic-moxie-4eb15d.netlify.app
+
+
+## Changes
+- [x] All pages to Next.js
+- [x] Header and footer are separated from pages
+- [x] Used build-in components like "Image"
+- [x] Adde API, check http://localhost:3000/api/test
+- [x] Pushed to GH

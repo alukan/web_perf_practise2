@@ -1,18 +1,27 @@
 {
-  "devDependencies": {
-    "lighthouse": "^11.7.0",
-    "rollup-plugin-visualizer": "^5.12.0",
-    "vite": "^5.2.2",
-    "vite-plugin-compression": "^0.5.1"
-  },
+  "name": "next_kitchen",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview --port 3000",
-    "audit_mobile": "lighthouse http://localhost:3000 --only-categories=best-practices --only-categories=performance --view",
-    "audit": "lighthouse http://localhost:3000 --only-categories=best-practices --only-categories=performance --preset=desktop --view ",
-    "build_and_audit_mobile": "concurrently \"npm run build\" \"npm run serve\" \"npm run audit_mobile\"",
-    "build_and_audit": "concurrently \"npm run build\" \"npm run serve\" \"npm run audit\"",
-    "stop": "kill $!"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "next": "14.1.4",
+    "node": "^18.20.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "sharp": "^0.33.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.4",
+    "typescript": "^5"
   }
 }
