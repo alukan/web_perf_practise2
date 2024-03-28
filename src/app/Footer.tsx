@@ -1,19 +1,9 @@
 'use client'
 
-import Link from 'next/link';
-import { usePathname } from 'next/navigation'
 import '../../public/assets/css/tooplate-crispy-kitchen.css';
 import '../../public/assets/css/bootstrap-icons.css';
 import '../../public/assets/css/bootstrap.min.css'
 const Footer = () => {
-    const path = usePathname()
-
-    const handleReservationClick = () => {
-        console.log('Open reservation modal or navigate to reservation page');
-    };
-
-    const isActive = (pathname: string) => pathname === path;
-
     return (
         <footer className="site-footer section-padding">
 

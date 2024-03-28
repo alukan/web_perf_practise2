@@ -1,24 +1,17 @@
 ## Getting Started
 
-First, run the development server:
+First, run the server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000/cocktails](http://localhost:3000/cocktails) with your browser to see the result.
 
 
 
 ## Changes
-- [x] All pages to Next.js
-- [x] Header and footer are separated from pages
-- [x] Used build-in components like "Image"
-- [x] Adde API, check http://localhost:3000/api/test
-- [x] Pushed to GH
+Header and Footer are hidden, they cause some problem that blocks app from working.
+On http://localhost:3000/cocktails you can see input fild that uses SWR to show cocktails.
+Added skeleton

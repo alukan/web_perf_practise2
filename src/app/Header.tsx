@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 import '../../public/assets/css/tooplate-crispy-kitchen.css';
 import '../../public/assets/css/bootstrap-icons.css';
 import '../../public/assets/css/bootstrap.min.css'
-import axios from 'axios';
+
 const Header = () => {
     const path = usePathname()
 
@@ -58,6 +58,11 @@ const Header = () => {
                         <li className="nav-item">
                             <Link className={`nav-link ${isActive('/contact') ? 'active' : ''}`} href="/contact">
                                 Contact
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className={`nav-link ${isActive('/cocktails') ? 'active' : ''}`} href="/cocktails">
+                                Cocktails
                             </Link>
                         </li>
                     </ul>
